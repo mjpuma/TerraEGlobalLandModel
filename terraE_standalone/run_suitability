@@ -1,0 +1,8 @@
+#!/bin/sh
+# RUNS code to output 1X1 Sheffield monthly data from the 3hourly netcdf files
+
+ifort suitability_avg.f  -I/opt/intel/netcdf-3.6.3/include -L/opt/intel/netcdf-3.6.3/lib -lnetcdf -convert big_endian
+
+
+./a.out &
+
